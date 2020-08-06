@@ -6,6 +6,12 @@ int main (){
   int i;
   int n;
   int a=0,b=0;
+  char str[8];
+
+  printf("Who are you?\n");
+  printf("> ");
+  scanf("%s",str);
+  printf("Hello, %s!\n\n",str);
   
   printf("Tossing a coin...\n");
 
@@ -22,6 +28,9 @@ int main (){
   }
 
   printf("Heads: %d,Tails:%d\n",a,b);
+
+  if(a>b) printf("%s won!\n",str);
+  else printf("%s lost!\n",str);
 
   return 0;
 }
